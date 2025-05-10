@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс валют | Доллар, Евро, Биткоин</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="light-theme">
+    <div class="container">
+        <header>
+            <h1>Курс валют</h1>
+            <button id="theme-toggle" aria-label="Сменить тему">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <div class="last-updated">
+            Последнее обновление: <span id="update-time">загрузка...</span>
+        </div>
+
+        <div class="currency-cards">
+            <div class="currency-card" id="usd">
+                <div class="currency-header">
+                    <img src="https://flagcdn.com/w80/us.png" alt="Доллар США" class="currency-flag">
+                    <h2>Доллар США (USD)</h2>
+                </div>
+                <div class="currency-value">—</div>
+                <div class="currency-change">—</div>
+            </div>
+
+            <div class="currency-card" id="eur">
+                <div class="currency-header">
+                    <img src="https://flagcdn.com/w80/eu.png" alt="Евро" class="currency-flag">
+                    <h2>Евро (EUR)</h2>
+                </div>
+                <div class="currency-value">—</div>
+                <div class="currency-change">—</div>
+            </div>
+
+            <div class="currency-card" id="btc">
+                <div class="currency-header">
+                    <img src="https://bitcoin.org/img/icons/opengraph.png" alt="Биткоин" class="currency-flag crypto">
+                    <h2>Биткоин (BTC)</h2>
+                </div>
+                <div class="currency-value">—</div>
+                <div class="currency-change">—</div>
+            </div>
+        </div>
+
+        <div class="refresh-info">
+            <i class="fas fa-sync-alt"></i> Данные обновляются автоматически каждые 10 минут
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
